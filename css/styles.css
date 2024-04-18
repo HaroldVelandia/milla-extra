@@ -14,7 +14,6 @@
     --black-color: hsl(0, 0%, 6%);
     --body-color: hsl(0, 0%, 6%);
     --container-color: hsl(0, 0%, 10%);
-
     /*=============font & typography=============*/
     /* 0.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Montserrat", sans-serif;
@@ -35,7 +34,141 @@
     --z-fixed: 100;
 }
 
-
-body{
-    background-color: grey;
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+    :root {
+      --biggest-font-size: 5rem;
+      --bigger-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+    }
 }
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body,
+  button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+  }
+  
+  body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+  
+  button {
+    border: none;
+    outline: none;
+  }
+  
+  h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .section {
+    padding-block: 5rem 1rem;
+  }
+  
+  .section__title {
+    font-size: var(--bigger-font-size);
+    font-family: var(--second-font);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .main {
+    overflow: hidden; /* For animation ScrollReveal */
+  }
+  
+  /*=============== HEADER & NAV ===============*/
+  
+  
+  /* Navigation for mobile devices */
+  
+  
+  /* Show menu */
+  
+  
+  /* Add blur header */
+  
+  
+  /* Active link */
+  
+  
+  /*=============== HOME ===============*/
+  
+  
+  /*=============== BUTTON ===============*/
+  
+  
+  /*=============== NEW ===============*/
+  
+  
+  /*=============== ABOUT ===============*/
+  
+  
+  /*=============== FAVORITES ===============*/
+  
+  
+  /*=============== VISIT ===============*/
+  
+  
+  /*=============== FOOTER ===============*/
+  
+  
+  /*=============== SCROLL BAR ===============*/
+  
+  
+  /*=============== SCROLL UP ===============*/
+  
+  
+  /* Show Scroll Up */
+  
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  
+  
+  /* For medium devices */
+  
+  
+  /* For large devices */
