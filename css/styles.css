@@ -235,11 +235,11 @@ img {
 /*=============== HOME ===============*/
 .home{
   position: relative;
-  padding-top: 6.5rem;
+  padding-top: 12rem;
 }
 
 .home__container{
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .home__bg,
@@ -272,7 +272,7 @@ img {
   font-size: var(--h2-font-size);
   font-family: var(--second-font);
   font-weight: var(--font-regular);
-  margin-bottom: 2.5rem;
+  margin-bottom: 8.5rem;
 }
 
 .home__image{
@@ -296,12 +296,12 @@ img {
 
 /*=============== NEW ===============*/
 .new__container{
-  padding-top: 1.5rem;
+  padding-top: .5rem;
   row-gap: 3.5rem;
 }
 
 .new__content{
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .new__card{
