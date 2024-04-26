@@ -359,6 +359,7 @@ img {
 .favorite__data{
   position: relative;
   text-align: center;
+  margin: .5rem;
 }
 
 .favorite__description{
