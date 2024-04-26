@@ -6,7 +6,7 @@
 
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(0, 0%, 77%);
+    --first-color: hsl(0, 0%, 95%);
     --first-color-alt: hsl(0, 0%, 100%);
     --title-color: hsl(0, 0%, 95%);
     --text-color: hsl(0, 0%, 75%);
@@ -356,6 +356,40 @@ img {
 
 
 /*=============== FAVORITES ===============*/
+.favorite__data{
+  position: relative;
+  text-align: center;
+}
+
+.favorite__description{
+  margin-bottom: 2rem;
+}
+
+.favorite__container{
+  padding-top: 3.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 1.5rem;
+}
+
+.favorite__card{
+  position: relative;
+  background-color: var(--container-color);
+  box-shadow: 0 12px 24px hsla(0, 0%, 0%, .3);
+  padding: 1rem;
+  border: 2px solid transparent;
+  transition: border-color .4s;
+}
+
+.favorite__title{
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  color: var(--first-color);
+}
+
+.favorite__card:hover{
+  border-color: var(--first-color);
+  cursor: pointer;
+}
 
 
 /*=============== VISIT ===============*/
