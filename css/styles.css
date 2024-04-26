@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*VARIABLES*/
 :root {
@@ -17,7 +17,7 @@
     /*=============font & typography=============*/
     /* 0.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Montserrat", sans-serif;
-    --second-font: "Protest Guerrilla", sans-serif;
+    --second-font: "Cabin Sketch", sans-serif;
     --biggest-font-size: 3rem;
     --bigger-font-size: 2rem;
     --h1-font-size: 1.5rem;
