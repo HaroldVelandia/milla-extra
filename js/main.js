@@ -47,3 +47,17 @@ window.addEventListener('scroll', scrollUp)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '40px',
+    opacity: 1,
+    scale: 1.1,
+    duration: 2500,
+    delay: 300,
+    //reset: true, // Animations repeat
+})
+
+sr.reveal(`.home__container, .sedes, .about__img, .about__data, .favorite__data2`)
+sr.reveal(`.home__container2, .footer__img-1, footer__img-2`, {rotate: {z: -15}})
+
+sr.reveal(`.footer__container`, { scale: 1})
