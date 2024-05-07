@@ -380,6 +380,7 @@ img {
   padding-top: 3.5rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem 1.5rem;
+  margin-bottom: 7rem;
 }
 
 .favorite__card{
@@ -702,6 +703,7 @@ img {
     padding-top: 5.5rem;
     grid-template-columns: repeat(3, 240px);
     gap: 5rem;
+    margin-bottom: 10rem;
   }
   .favorite__data2{
     margin: 7rem;
