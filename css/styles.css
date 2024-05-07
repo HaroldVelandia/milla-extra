@@ -373,7 +373,7 @@ input{
   width: 40vw;
   padding: 10px;
   outline: none;
-  border: 5px solid rgb(192, 192, 192);
+  border: 3px solid rgb(192, 192, 192);
   background-color: rgb(238, 238, 238);
   font-weight: 600;
 }

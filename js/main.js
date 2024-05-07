@@ -61,3 +61,21 @@ sr.reveal(`.home__container, .sedes, .about__img, .about__data, .favorite__data2
 sr.reveal(`.home__container2, .footer__img-1, footer__img-2`, {rotate: {z: -15}})
 
 sr.reveal(`.footer__container`, { scale: 1})
+
+
+/*=============== finder ===============*/
+const finder = document.getElementById('buscador');
+const results = document.querySelectorAll('.favorite__card');
+
+finder.addEventListener('input', function(){
+    const textLooked = this.value.trim().toLowerCase();
+
+    results.forEach(favorite__card => {
+        const textResult = favorite__card.textContent.trim().toLowerCase();
+        if (textResult.includes(textLooked)){
+            favorite__card.style.display = 'block';
+        }else{
+            favorite__card.style.display = 'none';
+        }
+    });    
+});
