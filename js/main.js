@@ -68,13 +68,13 @@ const finder = document.getElementById('buscador');
 const results = document.querySelectorAll('.favorite__card');
 
 finder.addEventListener('input', function(){
-    const textLooked = this.value.trim().toLowerCase();
+    const textLooked = this.value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");;
 
     results.forEach(favorite__card => {
-        const textResult = favorite__card.textContent.trim().toLowerCase();
+        const textResult = favorite__card.textContent.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         if (textResult.includes(textLooked)){
             favorite__card.style.display = 'block';
-        }else{
+        }else {
             favorite__card.style.display = 'none';
         }
     });    
