@@ -424,6 +424,60 @@ input{
   cursor: pointer;
 }
 
+/*===============  POP UP  ===============*/
+.contiene#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+#popup{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(255, 255, 255, 0.30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#popup.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.closer{
+  position: absolute;
+  right: 2rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  padding: 6px;
+  font-size: 1.25rem;
+}
+.p__data{
+  margin-top: .5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.p__title{
+  font-size: var(--biggest-font-size);
+  color: rgb(36, 36, 36);
+}
+.p__img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
 /*=============== FOOTER ===============*/
 .footer{
   padding-block: 3rem 2rem;
@@ -575,10 +629,27 @@ input{
     justify-content: center;
   }
 
+  #popup{
+    width: 90%;
+    padding: 10px;
+  
+  }
+
   .footer__content{
     grid-template-columns: max-content;
   }
 }
+/* testing media for pop up only*/
+@media screen and (max-width: 575px){
+
+  #popup{
+    width: 90%;
+    padding: 10px;
+  
+  }
+
+}
+
 
 /* For medium devices */
 @media screen and (min-width: 576px){
@@ -617,6 +688,11 @@ input{
   .favorite__container{
     grid-template-columns: repeat(2, 180px);
     justify-content: center;
+  }
+
+  #popup{
+    width: 80%;
+    padding: 30px;
   }
 
   .footer__content{
