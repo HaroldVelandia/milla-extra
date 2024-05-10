@@ -81,9 +81,25 @@ finder.addEventListener('input', function(){
 });
 
 /*=================== POP UP ===================*/
-function toggle(){
+function toggle(imageId){
+    //variables de las imagenes de cada milla//
+    var mainImage = document.getElementById('mainImage');
+
+    if (imageId === 'image1') {
+        mainImage.src = 'imagenes/millas/unamilla.png';
+    } else if (imageId === 'image2') {
+        mainImage.src = 'imagenes/millas/dosmilla.png';
+    } else if (imageId === 'image3') {
+        mainImage.src = 'imagenes/millas/tresmilla.png';
+    } else if (imageId === 'image4') {
+        mainImage.src = 'imagenes/millas/cuatromilla.png';
+    } else if (imageId === 'image5') {
+        mainImage.src = 'imagenes/millas/cincomilla.png';
+    }
+    //efecto pop up y blur del fondo//
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
     var popup = document.getElementById('popup');
     popup.classList.toggle('active');
 }
+
