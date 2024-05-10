@@ -640,6 +640,12 @@ input{
     padding: 10px;
   }
 
+  .closer{
+    padding: 1px;
+    font-size: 1rem;
+  }
+
+
   .footer__content{
     grid-template-columns: max-content;
   }
@@ -647,9 +653,18 @@ input{
 /* testing media for pop up only*/
 @media screen and (max-width: 575px){
 
+  .favorite__data2{
+    margin: 2rem;
+  }
+
   #popup{
     width: 90%;
     padding: 10px;
+  }
+
+  .closer{
+    padding: 2px;
+    font-size: 1.5rem;
   }
 }
 
