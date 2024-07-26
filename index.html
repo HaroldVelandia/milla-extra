@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     
     <!--styles-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/styles.css">    
     <!--OPEN GRAPH-->
     <meta property="og:title" content="Milla Extra">
     <meta property="og:description" content="Jóvenes 2024 / IPUC Bosa la Cabaña. Milla Extra.">
@@ -21,7 +22,9 @@
 <!----------------------------------------------------------------------------->
 <body>
 
-    <span class="loader"></span>
+    <div class="loader" id="loader">
+        <div class="lds-dots"></div>
+    </div>
 
     <header class="header" id="header">
          <nav class="nav container">
@@ -190,8 +193,8 @@
                     </div>
                 </div>
             </div>
-            <img src="imagenes/micon.png" alt="image" class="footer__img-1">
-            <img src="imagenes/micon2.png" alt="image" class="footer__img-2">
+            <img src="imagenes/micon.png" alt="image" class="footer__img-1" loading="lazy">
+            <img src="imagenes/micon2.png" alt="image" class="footer__img-2" loading="lazy">
         </div>
         <span class="footer__copy">
             &#169; Todos los derechos reservados por Milla Extra 2024 - Jóvenes IPUC Bosa la Cabaña.
@@ -205,8 +208,11 @@
 
     <!------------------------- scroll reveal  -------------------------->
     <script src="js/scrollreveal.min.js"></script>
+    <!--loader js-->
+    <script src="js/loader.js"></script>
     <!--main js-->
     <script src="js/main.js"></script>
+    
 </body>
 </html>
 

@@ -1,0 +1,43 @@
+/* Estilos para el loader */
+.loader {
+    background: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Asegura que el loader cubra toda la página */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Asegura que el loader esté por encima del contenido */
+    transition: opacity 0.5s ease-out; /* Transición para desvanecerse */
+}
+
+.lds-dots {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    background: #FFF;
+    box-sizing: border-box;
+    animation: shadowExpandX 1.5s linear infinite alternate;
+}
+
+@keyframes shadowExpandX {
+    0% {
+        box-shadow: 0 0, 0 0;
+        color: rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        box-shadow: -24px 0, 24px 0;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Estilo para el desvanecimiento del loader */
+.loader.fade-out {
+    opacity: 0; /* Desvanece el loader */
+    pointer-events: none; /* Evita que el loader reciba eventos */
+}
