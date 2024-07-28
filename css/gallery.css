@@ -1,32 +1,37 @@
 #event-gallery {
     padding: 20px;
-    margin-top: 13rem;
+    margin-top: 12rem;
+    display: grid;
+    gap: 20px;
 }
 
 .event {
-    margin-bottom: 30px;
-    margin-top: 2.5rem;
-    background: #fff;
     overflow: hidden;
     position: relative;
+    width: 100%;
+    height: 500px; /* Altura fija para todos los eventos */
+    box-sizing: border-box;
 }
 
 .event h2 {
-    background: #202020;
+    background: #333;
     color: #fff;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
 .carousel {
     position: relative;
     width: 100%;
+    height: calc(100% - 40px); /* Altura ajustada para el contenido del carrusel */
     overflow: hidden;
 }
 
 .carousel img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la relación de aspecto */
     opacity: 0;
     position: absolute;
     top: 0;
@@ -38,7 +43,6 @@
     opacity: 1;
     position: relative;
 }
-
 
 .carousel-control {
     position: absolute;
@@ -58,4 +62,21 @@
 
 .carousel-control.next {
     right: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    #event-gallery {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas grandes */
+    }
+    #event-gallery h2 {
+        grid-column: span 2;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    #event-gallery {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
 }
