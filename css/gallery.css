@@ -68,7 +68,9 @@
 @media (max-width: 500px) {
     #event-gallery {
         grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-        margin: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
     }
 
     .event {
@@ -79,7 +81,8 @@
 @media (min-width: 501px) and (max-width: 800px) {
     #event-gallery {
         grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas medianas */
-        margin: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .event {
@@ -95,7 +98,8 @@
 @media (min-width: 801px) {
     #event-gallery {
         grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas grandes */
-        margin: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     .event {
