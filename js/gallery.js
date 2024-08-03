@@ -72,4 +72,59 @@ document.addEventListener('DOMContentLoaded', function() {
         activeIndex = (activeIndex + direction + images.length) % images.length;
         images[activeIndex].classList.add('active');
     }
+
+    //transisiones automaticas de IMGs carrouseles
+    document.querySelectorAll('.carousel').forEach(carousel => {
+        const images = carousel.querySelectorAll('img');
+        const prevBtn = carousel.querySelector('.prev');
+        const nextBtn = carousel.querySelector('.next');
+        let currentIndex = 0;
+        const intervalTime = 5000; // Cambiar imagen cada 5 segundos
+        let autoSlideInterval;
+    
+        const showImage = (index) => {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        };
+    
+        const nextImage = () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        };
+    
+        const prevImage = () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        };
+    
+        const startAutoSlide = () => {
+            autoSlideInterval = setInterval(nextImage, intervalTime);
+        };
+    
+        const stopAutoSlide = () => {
+            clearInterval(autoSlideInterval);
+        };
+    
+        nextBtn.addEventListener('click', () => {
+            stopAutoSlide();
+            nextImage();
+            startAutoSlide();
+        });
+    
+        prevBtn.addEventListener('click', () => {
+            stopAutoSlide();
+            prevImage();
+            startAutoSlide();
+        });
+    
+        // Inici0 de transisiones imgs
+        startAutoSlide();
+    
+        // Pausa con hover de mouse
+        carousel.addEventListener('mouseover', stopAutoSlide);
+        carousel.addEventListener('mouseout', startAutoSlide);
+    });
 });
+
+
