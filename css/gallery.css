@@ -14,11 +14,12 @@
 }
 
 .event h2 {
-    background: #333;
-    color: #fff;
+    background: linear-gradient(to right, rgb(14, 13, 13), rgb(46, 46, 46));
+    color: #e2e2e2;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .carousel {
@@ -75,6 +76,7 @@
 
     .event {
         height: 300px; /* Altura para pantallas pequeñas */
+        margin-top: 1.5rem;
     }
 }
 
@@ -87,6 +89,7 @@
 
     .event {
         height: 300px; /* Altura para pantallas medianas */
+        margin-top: 1.5rem;
     }
 
     #event-gallery h2 {

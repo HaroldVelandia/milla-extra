@@ -57,7 +57,7 @@ const sr = ScrollReveal({
     //reset: true, // Animations repeat
 })
 
-sr.reveal(`.home__container, .sedes, .about__img, .about__data, .favorite__data2`)
+sr.reveal(`.home__container, .sedes, .about__img, .about__data, .favorite__data2, .galley_section`)
 sr.reveal(`.home__container2, .footer__img-1, footer__img-2`, {rotate: {z: -15}})
 
 sr.reveal(`.footer__container`, { scale: 1})
