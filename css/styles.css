@@ -441,7 +441,7 @@ input{
   width: 600px;
   padding: 30px;
   box-shadow: 0 5px 30px rgba(255, 255, 255, 0.30);
-  background: #fff;
+  background: #ffffff;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
