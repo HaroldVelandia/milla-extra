@@ -96,9 +96,11 @@ function toggle(imageId){
     } else if (imageId === 'image5') {
         mainImage.src = 'imagenes/millas/5cincomilla.png';
     } else if (imageId === 'image6') {
-        mainImage.src = 'imagenes/millas/6seismilla';
+        mainImage.src = 'imagenes/millas/6seismilla.png';
     } else if (imageId === 'imagemd3') {
-        mainImage.src = 'imagenes/millas/md3tresmilla';
+        mainImage.src = 'imagenes/millas/md3tresmilla.png';
+    } else if (imageId === 'imagemd4') {
+        mainImage.src = 'imagenes/millas/md4cuatromilla.png';
     }
     //efecto pop up y blur del fondo//
     var blur = document.getElementById('blur');
@@ -106,4 +108,6 @@ function toggle(imageId){
     var popup = document.getElementById('popup');
     popup.classList.toggle('active');
 }
+
+
 
