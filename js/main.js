@@ -86,21 +86,25 @@ function toggle(imageId){
     var mainImage = document.getElementById('mainImage');
 
     if (imageId === 'image1') {
-        mainImage.src = 'imagenes/millas/1unamilla.png';
+        mainImage.src = 'imagenes/millas/1onemill.png';
     } else if (imageId === 'image2') {
-        mainImage.src = 'imagenes/millas/2dosmilla.png';
+        mainImage.src = 'imagenes/millas/2twomill.png';
     } else if (imageId === 'image3') {
-        mainImage.src = 'imagenes/millas/3tresmilla.png';
+        mainImage.src = 'imagenes/millas/3threemill.png';
     } else if (imageId === 'image4') {
-        mainImage.src = 'imagenes/millas/4cuatromilla.png';
+        mainImage.src = 'imagenes/millas/4fourmill.png';
     } else if (imageId === 'image5') {
-        mainImage.src = 'imagenes/millas/5cincomilla.png';
+        mainImage.src = 'imagenes/millas/5fivemill.png';
     } else if (imageId === 'image6') {
-        mainImage.src = 'imagenes/millas/6seismilla.png';
+        mainImage.src = 'imagenes/millas/6sixmill.png';
+    } else if (imageId === 'imagemd0') {
+        mainImage.src = 'imagenes/millas/MDunique.png';
+    } else if (imageId === 'imagemd1') {
+        mainImage.src = 'imagenes/millas/MDonemill.png';
+    } else if (imageId === 'imagemd2') {
+        mainImage.src = 'imagenes/millas/MDtwomill.png';
     } else if (imageId === 'imagemd3') {
-        mainImage.src = 'imagenes/millas/md3tresmilla.png';
-    } else if (imageId === 'imagemd4') {
-        mainImage.src = 'imagenes/millas/md4cuatromilla.png';
+        mainImage.src = 'imagenes/millas/MDthreemill.png';
     }
     //efecto pop up y blur del fondo//
     var blur = document.getElementById('blur');
