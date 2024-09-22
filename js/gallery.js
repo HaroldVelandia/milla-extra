@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             date: '2024-09-07',
             title: '7 de Septiembre 2024',
-            photos: ['imagenes/gallery/7septiembre/jul6img1.jpg','imagenes/gallery/6julio/jul6img2.jpg','imagenes/gallery/6julio/jul6img3.jpg','imagenes/gallery/6julio/jul6img4.jpg','imagenes/gallery/6julio/jul6img5.jpg','imagenes/gallery/6julio/jul6img6.jpg','imagenes/gallery/6julio/jul6img7.jpg']
+            photos: ['imagenes/gallery/7septiembre/','imagenes/gallery/7septiembre/','imagenes/gallery/6julio/jul6img3.jpg','imagenes/gallery/6julio/jul6img4.jpg','imagenes/gallery/6julio/jul6img5.jpg','imagenes/gallery/6julio/jul6img6.jpg','imagenes/gallery/6julio/jul6img7.jpg']
         },
         {
             date: '2024-08-24',
