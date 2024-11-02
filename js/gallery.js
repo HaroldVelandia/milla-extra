@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             date: '2024-08-24',
             title: 'Clausura semana Juvenil',
-            photos: ['imagenes/gallery/7septiembre/jul6img1.jpg','imagenes/gallery/6julio/jul6img2.jpg','imagenes/gallery/6julio/jul6img3.jpg','imagenes/gallery/6julio/jul6img4.jpg','imagenes/gallery/6julio/jul6img5.jpg','imagenes/gallery/6julio/jul6img6.jpg','imagenes/gallery/6julio/jul6img7.jpg']
+            photos: ['imagenes/gallery/cljov/cljov1.jpg','imagenes/gallery/cljov/cljov2.jpg','imagenes/gallery/cljov/cljov3.jpg','imagenes/gallery/cljov/cljov4.jpg','imagenes/gallery/cljov/cljov5.jpg','imagenes/gallery/cljov/cljov6.jpg','imagenes/gallery/cljov/cljov7.jpg','imagenes/gallery/cljov/cljov8.jpg']
         }
     ];
 
