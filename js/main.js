@@ -105,6 +105,8 @@ function toggle(imageId){
         mainImage.src = 'imagenes/millas/MDtwomill.png';
     } else if (imageId === 'imagemd3') {
         mainImage.src = 'imagenes/millas/MDthreemill.png';
+    } else if (imageId === 'imagemd4') {
+        mainImage.src = 'imagenes/millas/MDfourtmill.png';
     }
     //efecto pop up y blur del fondo//
     var blur = document.getElementById('blur');
